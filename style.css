@@ -17,8 +17,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: thin;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -31,3 +31,87 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+.hlavicka li{
+  display: inline-block;
+  padding: 20px 30px 0px 30px; /* Tady takz přesně nevím, co se děje.. proč je spodní okraj větší.
+                        Je to dáno tím, že jde o header? */ 
+  font-size: 0.8em;
+}
+.hlavicka_super_appka{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*------------------*/
+.super_appka{
+  background-image: url(images/pozadi.jpg);
+  background-size: cover;
+  color: white;
+  
+  display: flex;
+  padding:0;
+  margin: 0;
+}
+
+.super_appka_sloupec1{
+  padding-left: 25px;
+}
+.super_appka_nadpis{
+  font-size: 4em;
+}
+.super_appka_popis{
+  font-size: 1.8em;
+  width: 70%;
+  padding-bottom: 50px;
+}
+.super_appka a{
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.super_appka a:hover,
+.super_appka a:focus {
+  background-color:#48418e;
+}
+
+.super_appka_sloupec2{
+  align-self: flex-end;
+}
+.super_appka_img{
+  align-content: right;
+  padding-top: 20px;
+  margin-bottom: -6px; /* Lze takto použít? Bez tohoto marginu byl obrázek o kousek výš.. ale nevím vůbec proč:) */
+}
+
+/*------------------*/
+.nabidka{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.nabidka_sloupce{
+  padding: 20px;
+}
+.nabidka_sloupce h2{
+  font-size: 1em;
+  color: #20489e;  
+}
+.nabidka_sloupce p{
+  font-size: 0.8em;
+  padding: 10px;
+}
+.nabidka img{
+  width: 50px;
+}
+
+/*------------------*/
+footer{
+  background-color:#48418e;
+  color: white;
+  text-align: center;
+  font-size: 0.6em;
+  padding: 1em;
+}
